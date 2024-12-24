@@ -169,14 +169,6 @@ int BN_mod_add(BIGNUM *r, const BIGNUM *a, const BIGNUM *b, const BIGNUM *m, BN_
 int BN_mod_sub(BIGNUM *r, const BIGNUM *a, const BIGNUM *b, const BIGNUM *m, BN_CTX *ctx);
 #endif
 
-#if !defined(HAVE_BN_RAND_RANGE)
-int BN_rand_range(BIGNUM *r, BIGNUM *range);
-#endif
-
-#if !defined(HAVE_BN_PSEUDO_RAND_RANGE)
-int BN_pseudo_rand_range(BIGNUM *r, BIGNUM *range);
-#endif
-
 #if !defined(HAVE_CONF_GET1_DEFAULT_CONFIG_FILE)
 char *CONF_get1_default_config_file(void);
 #endif
